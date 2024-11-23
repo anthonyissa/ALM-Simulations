@@ -150,5 +150,36 @@
             <img src="data:image/png;base64,{{ plots.assets_liabilities_comparison }}" alt="Comparaison Actifs-Passifs">
         </div>
     </div>
+
+    <!-- LCR Section -->
+    <div class="mni-section">
+        <h2>Liquidity Coverage Ratio (LCR)</h2>
+        <p>Le LCR est un ratio réglementaire qui vise à s'assurer que les banques disposent d'un stock suffisant 
+           d'actifs liquides de haute qualité (HQLA) pour survivre à un scénario de stress de 30 jours.</p>
+        
+        <h3>Composition du LCR</h3>
+        <ul>
+            <li><strong>HQLA (Numérateur)</strong>:
+                <ul>
+                    <li>Niveau 1: Actifs les plus liquides (trésorerie, réserves banque centrale, titres souverains)</li>
+                    <li>Niveau 2: Actifs moins liquides avec une décote de 15% (titres d'établissements de crédit)</li>
+                </ul>
+            </li>
+            <li><strong>Flux de trésorerie (Dénominateur)</strong>:
+                <ul>
+                    <li>Sorties: Retraits potentiels sur 30 jours selon le type de dépôt</li>
+                    <li>Entrées: Remboursements attendus sur 30 jours (plafonnées à 75% des sorties)</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <p>Formule: LCR = HQLA / (Sorties - min(Entrées, 75% × Sorties)) ≥ 100%</p>
+    </div>
+    <div class="plot-card">
+        <h2>Analyse du LCR</h2>
+        <img src="data:image/png;base64,{{ plots.lcr_plot }}" alt="LCR Analysis">
+        <p class="plot-note">Note: Ces calculs sont basés sur des hypothèses simplifiées et ne représentent 
+        qu'une approximation du LCR réglementaire qui nécessite des données plus détaillées.</p>
+    </div>
 </body>
 </html> 
