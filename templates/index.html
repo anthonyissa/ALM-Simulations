@@ -86,7 +86,7 @@
     <!-- MNI Section -->
     <div class="mni-section">
         <h2>Analyse du MNI (Marge Nette d'Intérêt)</h2>
-        <p>Cette section présente une analyse détaillée de la Marge Nette d'Intérêt (MNI) basée sur les données de l'étude 
+        <p>Cette section présente une analyse détaillée de la Marge Nette d'Intérêt (MNI) basée sur les données de l'étude (page 17)
         "<a href="https://acpr.banque-france.fr/sites/default/files/medias/documents/20240716_as161_grands_groupes_bancaires_fr_2023.pdf" 
         target="_blank">La situation des grands groupes bancaires français à fin 2023</a>" publiée par l'ACPR.</p>
     </div>
@@ -118,5 +118,19 @@
             <img src="data:image/png;base64,{{ plots.eve_npv_plot }}" alt="EVE NPV">
         </div>
      </div>
+
+    <!-- Gap Taux Section -->
+    <div class="mni-section">
+        <h2>Analyse du Gap de Taux</h2>
+        <p>Cette section présente une analyse du Gap de Taux basée sur les données de l'étude (page 12)
+        "<a href="https://acpr.banque-france.fr/sites/default/files/medias/documents/20240716_as161_grands_groupes_bancaires_fr_2023.pdf" 
+        target="_blank">La situation des grands groupes bancaires français à fin 2023</a>" publiée par l'ACPR.</p>
+    </div>
+    <div class="plots-container">
+        <div class="plot-card">
+            <h2>Gap Taux Plot</h2>
+            <img src="data:image/png;base64,{{ plots.gap_taux_plot }}" alt="Gap Taux Plot">
+        </div>
+    </div>
 </body>
 </html> 

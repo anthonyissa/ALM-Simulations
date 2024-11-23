@@ -1,0 +1,118 @@
+{
+  "gap_taux": {
+    "date_bilan": "31/12/2023",
+    "total_actif": 8508.4,
+    "total_passif": 8508.4,
+    "details": {
+      "actifs": {
+        "tresorerie_et_comptes_banques_centrales": {
+          "montant": 1071.3,
+          "variation_2023_2022": -7.2,
+          "sensible_aux_taux": false
+        },
+        "derives_fins_de_transaction": {
+          "montant": 533.6,
+          "variation_2023_2022": -7.3,
+          "sensible_aux_taux": true
+        },
+        "titres_de_dette_detenus": {
+          "total": 796.4,
+          "par_categorie": {
+            "banques_centrales": 19.6,
+            "administrations_centrales": 516.1,
+            "etablissements_credit": 106.1,
+            "autres_entites_financieres": 89.4,
+            "snf": 65.2
+          },
+          "variation_2023_2022": 14.5,
+          "sensible_aux_taux": true
+        },
+        "prets_et_avances": {
+          "total": 5252.2,
+          "par_categorie": {
+            "banques_centrales": 58.8,
+            "administrations_centrales": 366.4,
+            "etablissements_credit": 451.9,
+            "autres_entites_financieres": 1388.4,
+            "snf": 1999.8,
+            "menages": 988.9
+          },
+          "variation_2023_2022": 4.5,
+          "sensible_aux_taux": true
+        },
+        "autres_actifs": {
+          "montant": 775.5,
+          "variation_2023_2022": -5.7,
+          "sensible_aux_taux": false
+        }
+      },
+      "passifs": {
+        "derives_fins_de_transaction": {
+          "montant": 510.7,
+          "variation_2023_2022": -6.5,
+          "sensible_aux_taux": true
+        },
+        "titres_de_dette_emis": {
+          "montant": 1444.3,
+          "variation_2023_2022": 20.9,
+          "sensible_aux_taux": true
+        },
+        "depots": {
+          "total": 5327.3,
+          "par_categorie": {
+            "banques_centrales": 199.6,
+            "administrations_centrales": 154.9,
+            "etablissements_credit": 436.1,
+            "autres_entites_financieres": 889.0,
+            "snf": 1468.0,
+            "menages": 2179.4
+          },
+          "variation_2023_2022": 0.5,
+          "sensible_aux_taux": true
+        },
+        "derives_couverture": {
+          "montant": 113.4,
+          "variation_2023_2022": -28.5,
+          "sensible_aux_taux": true
+        },
+        "autres_passifs": {
+          "montant": 585.3,
+          "variation_2023_2022": -17.5,
+          "sensible_aux_taux": false
+        },
+        "capitaux_propres": {
+          "montant": 527.4,
+          "variation_2023_2022": 5.7,
+          "sensible_aux_taux": false
+        }
+      }
+    },
+    "analyses": {
+      "gap_total": {
+        "actifs_sensibles": 6582.2,
+        "passifs_sensibles": 7395.4,
+        "gap_net": -813.2,
+        "interpretation": "Gap négatif : une hausse des taux pénaliserait le revenu net d'intérêt."
+      },
+      "contribution_a_la_variation": {
+        "principaux_postes": [
+          {
+            "poste": "Titres de dette émis",
+            "variation": 20.9,
+            "impact_sur_gap": "Augmentation des passifs sensibles, élargissant le gap négatif."
+          },
+          {
+            "poste": "Titres de dette détenus",
+            "variation": 14.5,
+            "impact_sur_gap": "Augmentation des actifs sensibles, réduisant légèrement le gap négatif."
+          },
+          {
+            "poste": "Prêts et avances aux SNF",
+            "variation": 6.7,
+            "impact_sur_gap": "Contribution positive à l'augmentation des actifs sensibles."
+          }
+        ]
+      }
+    }
+  }
+}
