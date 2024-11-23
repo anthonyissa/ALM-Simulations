@@ -181,5 +181,46 @@
         <p class="plot-note">Note: Ces calculs sont basés sur des hypothèses simplifiées et ne représentent 
         qu'une approximation du LCR réglementaire qui nécessite des données plus détaillées.</p>
     </div>
+
+    <!-- RWA Market Section -->
+    <div class="mni-section">
+    <h2>Analyse des RWA Marché</h2>
+    <p>Cette section présente une analyse des RWA marché basée sur les données de l'étude (page 47)
+     "<a href="https://acpr.banque-france.fr/sites/default/files/medias/documents/20240716_as161_grands_groupes_bancaires_fr_2023.pdf" 
+     target="_blank">La situation des grands groupes bancaires français à fin 2023</a>" publiée par l'ACPR.</p>
+    <p>Ce graphique montre la décomposition des Risk-Weighted Assets (RWA) liés aux activités de marché, 
+       qui représentent une composante importante des exigences en fonds propres de la banque.</p>
+
+    
+    <h3>Composantes des RWA Marché</h3>
+    <ul>
+        <li><strong>Risque de Change (en jaune)</strong>:
+            <ul>
+                <li>Représente 8-22% des RWA marché</li>
+                <li>Lié aux positions en devises et à leur volatilité</li>
+                <li>Inclut les positions directes et indirectes en devises</li>
+            </ul>
+        </li>
+        <li><strong>Risque de Taux (en rose)</strong>:
+            <ul>
+                <li>Représente 45-60% des RWA marché</li>
+                <li>Reflète la sensibilité du portefeuille aux variations de taux</li>
+                <li>Inclut les positions de trading et le banking book</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <p>L'évolution de ces composantes montre l'importance relative de chaque type de risque dans 
+       le calcul des exigences en fonds propres réglementaires pour les activités de marché.</p>
+</div>
+<div class="plot-card">
+    <h2>Décomposition des RWA Marché</h2>
+    <img src="data:image/png;base64,{{ plots.rwa_market_plot }}" alt="RWA Market Plot">
+    <p class="plot-note">
+        Note: Les pourcentages représentent la contribution de chaque type de risque aux RWA marché totaux.
+        Cette décomposition aide à comprendre les principales sources de consommation de capital réglementaire
+        dans les activités de marché.
+    </p>
+</div>
 </body>
 </html> 
