@@ -1,0 +1,89 @@
+{
+  "institution": "Banque de France",
+  "metrics": [
+    {
+      "year": 2020,
+      "EVE": {
+        "baseline": 1.25e11,
+        "stress_scenario_minus_200bps": 1.15e11,
+        "stress_scenario_plus_200bps": 1.35e11
+      },
+      "NPV": {
+        "assets": 2.8e11,
+        "liabilities": 1.55e11,
+        "net_present_value": 1.25e11
+      },
+      "interest_rate_risk": {
+        "sensitivity_ratio": 12.5,
+        "duration_gap_years": 4.1
+      },
+      "key_ratios": {
+        "capital_adequacy_ratio": 15.2,
+        "liquidity_coverage_ratio": 125.6
+      }
+    },
+    {
+      "year": 2021,
+      "EVE": {
+        "baseline": 1.3e11,
+        "stress_scenario_minus_200bps": 1.18e11,
+        "stress_scenario_plus_200bps": 1.38e11
+      },
+      "NPV": {
+        "assets": 2.95e11,
+        "liabilities": 1.65e11,
+        "net_present_value": 1.3e11
+      },
+      "interest_rate_risk": {
+        "sensitivity_ratio": 11.8,
+        "duration_gap_years": 3.9
+      },
+      "key_ratios": {
+        "capital_adequacy_ratio": 15.8,
+        "liquidity_coverage_ratio": 130.4
+      }
+    },
+    {
+      "year": 2022,
+      "EVE": {
+        "baseline": 1.35e11,
+        "stress_scenario_minus_200bps": 1.2e11,
+        "stress_scenario_plus_200bps": 1.4e11
+      },
+      "NPV": {
+        "assets": 3.1e11,
+        "liabilities": 1.75e11,
+        "net_present_value": 1.35e11
+      },
+      "interest_rate_risk": {
+        "sensitivity_ratio": 10.9,
+        "duration_gap_years": 3.7
+      },
+      "key_ratios": {
+        "capital_adequacy_ratio": 16.1,
+        "liquidity_coverage_ratio": 135.2
+      }
+    },
+    {
+      "year": 2023,
+      "EVE": {
+        "baseline": 1.38e11,
+        "stress_scenario_minus_200bps": 1.25e11,
+        "stress_scenario_plus_200bps": 1.42e11
+      },
+      "NPV": {
+        "assets": 3.2e11,
+        "liabilities": 1.82e11,
+        "net_present_value": 1.38e11
+      },
+      "interest_rate_risk": {
+        "sensitivity_ratio": 10.4,
+        "duration_gap_years": 3.5
+      },
+      "key_ratios": {
+        "capital_adequacy_ratio": 16.5,
+        "liquidity_coverage_ratio": 138.7
+      }
+    }
+  ]
+}

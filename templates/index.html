@@ -40,10 +40,34 @@
             display: block;
             margin: 0 auto;
         }
+        .mni-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+        .mni-section h2 {
+            color: #444;
+            margin-top: 0;
+        }
+        .mni-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .mni-section a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .mni-section a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <h1>Flask Plot Examples</h1>
+    
+    <!-- First set of plots -->
     <div class="plots-container">
         <div class="plot-card">
             <h2>Line Plot</h2>
@@ -57,6 +81,18 @@
             <h2>Bar Plot</h2>
             <img src="data:image/png;base64,{{ plots.bar_plot }}" alt="Bar Plot">
         </div>
+    </div>
+
+    <!-- MNI Section -->
+    <div class="mni-section">
+        <h2>Analyse du MNI (Marge Nette d'Intérêt)</h2>
+        <p>Cette section présente une analyse détaillée de la Marge Nette d'Intérêt (MNI) basée sur les données de l'étude 
+        "<a href="https://acpr.banque-france.fr/sites/default/files/medias/documents/20240716_as161_grands_groupes_bancaires_fr_2023.pdf" 
+        target="_blank">La situation des grands groupes bancaires français à fin 2023</a>" publiée par l'ACPR.</p>
+    </div>
+
+    <!-- MNI plots -->
+    <div class="plots-container">
         <div class="plot-card">
             <h2>MNI Plot</h2>
             <img src="data:image/png;base64,{{ plots.mni_plot }}" alt="MNI Plot">
@@ -65,6 +101,22 @@
             <h2>PNB Decomposition</h2>
             <img src="data:image/png;base64,{{ plots.pnb_decomposition }}" alt="PNB Decomposition">
         </div>
+        <div class="plot-card">
+            <h2>MNI Proportion</h2>
+            <img src="data:image/png;base64,{{ plots.mni_proportion }}" alt="MNI Proportion">   
+        </div>
     </div>
+
+    <!-- EVE NPV Section -->
+    <div class="mni-section">
+        <h2>Analyse de l'EVE et du NPV</h2>
+        <p>Cette section présente une analyse de l'Economic Value of Equity (EVE) et du Net Present Value (NPV) basée sur les données de l'étude 
+    </div>
+    <div class="plots-container">
+        <div class="plot-card">
+            <h2>EVE NPV Plot</h2>
+            <img src="data:image/png;base64,{{ plots.eve_npv_plot }}" alt="EVE NPV">
+        </div>
+     </div>
 </body>
 </html> 
