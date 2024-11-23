@@ -65,10 +65,10 @@
     </style>
 </head>
 <body>
-    <h1>Flask Plot Examples</h1>
+    <!-- <h1>Flask Plot Examples</h1> -->
     
     <!-- First set of plots -->
-    <div class="plots-container">
+    <!-- <div class="plots-container">
         <div class="plot-card">
             <h2>Line Plot</h2>
             <img src="data:image/png;base64,{{ plots.line_plot }}" alt="Line Plot">
@@ -81,7 +81,7 @@
             <h2>Bar Plot</h2>
             <img src="data:image/png;base64,{{ plots.bar_plot }}" alt="Bar Plot">
         </div>
-    </div>
+    </div> -->
 
     <!-- MNI Section -->
     <div class="mni-section">
@@ -122,7 +122,7 @@
     <!-- Gap Taux Section -->
     <div class="mni-section">
         <h2>Analyse du Gap de Taux</h2>
-        <p>Cette section présente une analyse du Gap de Taux basée sur les données de l'étude (page 12)
+        <p>Cette section présente une analyse du Gap de Taux basée sur les données de l'étude (page 11)
         "<a href="https://acpr.banque-france.fr/sites/default/files/medias/documents/20240716_as161_grands_groupes_bancaires_fr_2023.pdf" 
         target="_blank">La situation des grands groupes bancaires français à fin 2023</a>" publiée par l'ACPR.</p>
     </div>
@@ -130,6 +130,24 @@
         <div class="plot-card">
             <h2>Gap Taux Plot</h2>
             <img src="data:image/png;base64,{{ plots.gap_taux_plot }}" alt="Gap Taux Plot">
+        </div>
+    </div>
+
+    <!-- Gap de Liquidité -->
+    <div class="mni-section">
+        <h2>Gap de Liquidité</h2>
+        <p>Ce graphique montre le gap de liquidité par catégorie. Les barres vertes représentent un excédent 
+           de liquidité (actifs > passifs) tandis que les barres rouges représentent un déficit de liquidité 
+           (passifs > actifs).</p>
+    </div>
+    <div class="plots-container">
+        <div class="plot-card">
+            <h2>Gap de Liquidité Plot</h2>
+            <img src="data:image/png;base64,{{ plots.liquidity_gap_plot }}" alt="Gap de Liquidité Plot">
+        </div>
+        <div class="plot-card">
+            <h2>Comparaison Actifs-Passifs</h2>
+            <img src="data:image/png;base64,{{ plots.assets_liabilities_comparison }}" alt="Comparaison Actifs-Passifs">
         </div>
     </div>
 </body>
